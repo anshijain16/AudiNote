@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>My Website</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <a class="logo" href="#">Brand</a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+            <ul class="nav-list">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-inner">
+                <h1>Build. Launch. Grow.</h1>
+                <p>A clean, responsive starter site with dark mode and smooth UX.</p>
+                <div class="cta-group">
+                    <a class="btn primary" href="#features">Explore Features</a>
+                    <a class="btn" href="#contact">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <h2>Features</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Responsive</h3>
+                    <p>Looks great on phones, tablets, and desktops out of the box.</p>
+                </article>
+                <article class="card">
+                    <h3>Accessible</h3>
+                    <p>Semantic HTML, focus styles, and ARIA labels where they matter.</p>
+                </article>
+                <article class="card">
+                    <h3>Dark mode</h3>
+                    <p>Automatic theme matching with a manual toggle that persists.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>About</h2>
+            <p>This starter provides a minimal, modern baseline so you can ship faster.</p>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            <form id="contactForm" novalidate>
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" required />
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required />
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button class="btn primary" type="submit">Send</button>
+                <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> Brand. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
